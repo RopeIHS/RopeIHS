@@ -1,0 +1,419 @@
+/* FONTES */
+/* Inter, wight 800 - "font-family: 'Inter', sans-serif;" */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+/* Poppins, weight 300, 400 - "font-family: 'Poppins', sans-serif;"*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+/* Latto, weight 700 - "font-family: 'Lato', sans-serif;" */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+:root {
+  --background-color: #fbfcfe;
+  --dark-blue: #02a292;
+  --blue: #02a292;
+  --light-blue: #d9e6ee;
+  --black: #1c1c1c;
+  --gray: #c4c4c4;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
+li,
+a,
+button {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--gray);
+  text-decoration: none;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+p,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 12rem;
+}
+.logo {
+  cursor: pointer;
+}
+
+.navLinks {
+  list-style: none;
+}
+.navLinks li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+.navLinks li a {
+  transition: all 0.3 ease 0s;
+}
+.navLinks li a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+button {
+  cursor: pointer;
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 1rem;
+}
+button:hover {
+  opacity: 0.8;
+}
+.inicio,
+.clientes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 12rem;
+  gap: 7.3rem;
+}
+.mainText {
+  margin-top: -4rem;
+}
+.mainTitle {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+.mainSubTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.mainBG {
+  width: 55rem;
+}
+.clientesBG {
+  width: 44rem;
+}
+.clientesText {
+  margin-top: -10rem;
+}
+.clientesTitle {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+.clientesSubTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.clientesHeadline {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.ondeEstamos {
+  text-align: center;
+  padding: 3rem 12rem;
+  margin-bottom: 2rem;
+}
+.localTitle {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+.localSubTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.localBG {
+  width: 80%;
+}
+.contato {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 12rem;
+  gap: 7.3rem;
+}
+.contatoTitle {
+  font-size: 4.8rem;
+  margin-bottom: 4rem;
+}
+.formularioSubTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.boldEffect {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+.numeroContato,
+.emailContato {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.mapaGoogle {
+  margin-top: 3rem;
+  width: 40rem;
+  height: 30rem;
+}
+.nomeForm,
+.assuntoForm,
+.emailForm {
+  width: 18rem;
+  border: none;
+  border-bottom: solid 0.2rem var(--black);
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.nomeForm:focus,
+.assuntoForm:focus,
+.emailForm:focus,
+.mensagemForm:focus {
+  outline: none;
+}
+.mensagemForm {
+  width: 437px;
+  height: 166px;
+  padding: 0.7rem;
+  border: solid 0.2rem var(--black);
+  border-radius: 1rem;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.servicos {
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 12rem;
+  gap: 7.3rem;
+}
+
+.servicos__title {
+  text-align: center;
+}
+
+.servicos__lineOne,
+.servicos__lineTwo,
+.servicos__lineThree {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.servicos__box {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  border: 2px solid var(--black);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.servicos__title {
+  font-size: 4.8rem;
+  margin-bottom: 4rem;
+}
+
+.badge__Text {
+  color: var(--black);
+  font-size: 2rem;
+}
+.fotter {
+  background-color: #23272a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.icone-footer {
+  background-color: transparent;
+}
+.instagram-logo {
+  background-color: transparent;
+}
+.logos-certificadas {
+  margin-bottom: 15px;
+  background-color: #23272a;
+}
+.autorization-text {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--background-color);
+  background-color: #23272a;
+}
+.logo-inmetro {
+  background-color: transparent;
+  margin-left: 30px;
+  width: 50px;
+  height: 50px;
+}
+.logo-ipem {
+  background-color: transparent;
+  width: 100px;
+}
+
+@media (max-width: 858px) {
+  nav {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8.5rem;
+  }
+  .botaoContato {
+    display: none;
+  }
+  .inicio {
+    /* margin-top: 30px; */
+    width: 100%;
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .mainBG {
+    margin-top: -5rem;
+    width: 30rem;
+    /* height: 45rem; */
+  }
+  .servicos {
+    width: 100%;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .servicos__lineOne,
+  .servicos__lineTwo,
+  .servicos__lineThree {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .servicos__box {
+    margin-bottom: 50px;
+  }
+  .clientes {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.3rem;
+    padding: 1rem 3rem;
+  }
+  .contato {
+    flex-direction: column;
+  }
+  .mainTitle {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+  }
+  .mainSubTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .servicos__title {
+    font-size: 2.4rem;
+    margin-bottom: -30px;
+  }
+  .badge__Text {
+    font-size: 1.5rem;
+  }
+  .clientesTitle {
+    margin-top: 30px;
+    font-size: 2.4rem;
+  }
+  .clientesSubTitle {
+    font-size: 1.8rem;
+  }
+  .clientesHeadline {
+    font-size: 1.5rem;
+  }
+  .clientesBG {
+    width: 30rem;
+  }
+  .contato {
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 30px;
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  .mapaGoogle {
+    width: 30rem;
+  }
+  .mensagemForm {
+    width: 30rem;
+    height: 166px;
+    padding: 0.7rem;
+    border: solid 0.2rem var(--black);
+    border-radius: 1rem;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  .ondeEstamos {
+    margin-top: 30px;
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  .localTitle {
+    font-size: 2.4rem;
+  }
+  .localSubTitle {
+    font-size: 1.5rem;
+  }
+  .localBG {
+    width: 30rem;
+  }
+  .fotter {
+    background-color: #23272a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .icone-footer {
+    background-color: transparent;
+  }
+  .autorization-text {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--background-color);
+    background-color: #23272a;
+  }
+  .logo-inmetro {
+    background-color: transparent;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+  }
+  .logo-ipem {
+    background-color: transparent;
+    width: 100px;
+  }
+}
